@@ -27,9 +27,7 @@ export default {
       targets: './dist',
     }),
     resolve(),
-    typescript({
-      tslib: require.resolve('tslib'),
-    }),
+    typescript(),
     babel({
       babelHelpers: 'bundled',
     }),
